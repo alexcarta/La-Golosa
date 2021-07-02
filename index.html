@@ -1,76 +1,230 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== ICONS LIBRARY ===============-->
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
 
-        <!--=============== REMIXICONS ===============-->
-
-        <!--=============== SWIPER CSS ===============-->
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <title>La Golosa</title>
-      </head>
-
-            <!--==================== HOME ====================-->
-            <body>
+  <!--=============== SWIPER CSS ===============-->
 
 
-            <!--==================== ABOUT ====================-->
+      <!-- <style>
+        @font-face {
+          font-family: "aqua";
+          src: url("./assets/font/aqua.ttf");
+        }
+
+        .harlow {
+          font-family: "aqua";
+        }
+      </style> -->
+
+      <!--=============== CSS ===============-->
+
+      <link rel="stylesheet" href="./assets/css/styles.css">
+      <title>La Golosa</title>
+
+      <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    </head>
+    <body>
+
+      <!--==================== HEADER ====================-->
+
+      <header class="header" id="header">
+
+        <nav class="nav container">
+
+          <a href="#" class="nav__logo">LA GOLOSA</a>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#discover" class="nav__link">Discover</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact Us</a>
+              </li>
+            </ul>
+            <i class="ri-close-circle-line nav__close" id="nav-close"></i>
+
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+
+        </nav>
+      </header>
+
+      <main class="main">
+
+        <!--==================== HOME ====================-->
+
+        <section class="home" id="home">
+
+          <img src="./assets/img/home1.jpg" alt="" class="home__img">
+
+          <div class="home__container container grid">
+
+            <div class="home__data">
+              <span class="home__data-subtitle">Discover Italy in London</span>
+              <h1 class="home__data-title">Get The <br> Best <b>Tastes of<br> Italy</b></h1>
+              <a href="#" class="button">Explore</a>
+            </div>
+
+            <div class="home__social">
+              <a href="https://www.facebook.com/lagolosalondon" target="_blank" class="home__social-link">
+                <i class="ri-facebook-box-line"></i>
+              </a>
+
+              <a href="https://www.instagram.com/la_golosa_london/?hl=en" target="_blank" class="home__social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+
+              <a href="https://deliveroo.co.uk/menu/london/highbury/la-golosa-deli" target="_blank" class="home__social-link">
+                <span class="iconify" data-icon="simple-icons:deliveroo" data-inline="false"></span>
+              </a>
+            </div>
+
+            <div class="home__info">
+              <div>
+                <span class="home__info-title">5 Italian must-haves</span>
+                <a href="" class="button button--flex button--link home__info-button">
+                  More <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+
+              <div class="home__info-overlay">
+                <img src="./assets/img/home2.jpg" alt="" class="home__info-img">
+              </div>
+            </div>
 
 
-            <!--==================== DISCOVER ====================-->
+          </div>
 
-                        <!--==================== DISCOVER 1 ====================-->
+        </section>
+
+        <!--==================== ABOUT ====================-->
+
+        <section class="about section" id="about">
+
+          <div class="about__container contaienr grid">
+            <div class="about__data">
+              <h2 class="section__title about__title">More information <br> about us</h2>
+              <p class="about__description"><b>La Golosa</b> is a delightful yet sparkling Italian-Sardinian deli-shop, a fine gem nested in London Highbury/Islington, born from the love for our roots. You can choose among the most diverse sortiment of high quality Italian brands or shop some fresh goodies coming all the way from Sardinia.
+              </p>
+
+              <a href="" class="button">Get a delivery  <span class="iconify" data-icon="simple-icons:deliveroo" data-inline="false"></span></a>
+              <!-- or a link with a map can be cool -->
+            </div>
+
+            <div class="about__img">
+              <div class="about__img-overlay">
+                <img src="./assets/img/about1.jpg" alt="" class="about__img-one">
+              </div>
+
+              <div class="about__img-overlay">
+                <img src="./assets/img/about2.jpg" alt="" class="about__img-two">
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!--==================== DISCOVER ====================-->
+
+        <section class="discover section" id="section">
+          <h2 class="section__title">Discover the 5 <br> Italian must-haves</h2>
+
+          <div class="discover__container container">
+
+            <div>
+
+              <!-- DISCOVER 1 -->
+
+              <div class="discover__card">
+                <img src="./assets/img/discover1.jpg" alt="" class="discover__img">
+                <div class="discover__data">
+                  <h2 class="discover__title">Coffee</h2>
+                  <span class="discover__description">How can you even imagine of doing something without drinking a good coffee first? We got your back, come and get one at our bar!</span>
+                </div>
+              </div>
+
+              <!-- DISCOVER 2 -->
+
+              <div class="discover__card">
+                <img src="./assets/img/discover2.jpg" alt="" class="discover__img">
+                <div class="discover__data">
+                  <h2 class="discover__title">Pasta</h2>
+                  <span class="discover__description">There is pasta and there is Pasta, we only sell the latter. Come to have a look to the big choice of Italian high quality pasta brands, and don't forget: <em>al dente</em> is the way!</span>
+                </div>
+              </div>
+
+              <!-- DISCOVER 3 -->
+
+              <div class="discover__card">
+                <img src="./assets/img/discover3.jpg" alt="" class="discover__img">
+                <div class="discover__data">
+                  <h2 class="discover__title">Dessert</h2>
+                  <span class="discover__description">Apetite but not real hunger, just enough for a litle pastry? We have gluten-free cannoli, how about that?</span>
+                </div>
+              </div>
+
+              <!-- DISCOVER 4 -->
+
+              <div class="discover__card">
+                <img src="./assets/img/discover4.jpg" alt="" class="discover__img">
+                <div class="discover__data">
+                  <h2 class="discover__title">Aperitivo</h2>
+                  <span class="discover__description">Ok, that's something you don't want to joke around! After the office, for a gather with some friends at your's, serve them some real Aperol spritz, we hand you some bottles, come over!</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
 
 
-                        <!--==================== DISCOVER 2 ====================-->
+        </section>
+
+        <!--==================== EXPERIENCE ====================-->
 
 
-                        <!--==================== DISCOVER 3 ====================-->
+        <!--==================== VIDEO ====================-->
 
 
-                        <!--==================== DISCOVER 4 ====================-->
+        <!--==================== PLACES ====================-->
 
 
-            <!--==================== EXPERIENCE ====================-->
+        <!--==================== SUBSCRIBE ====================-->
 
 
-            <!--==================== VIDEO ====================-->
+        <!--==================== SPONSORS ====================-->
 
+      </main>
 
-            <!--==================== PLACES ====================-->
+      <!--==================== FOOTER ====================-->
 
+      <!--========== SCROLL UP ==========-->
 
-                    <!--==================== PLACES CARD 1 ====================-->
+      <!--=============== SCROLL REVEAL===============-->
 
+      <!--=============== SWIPER JS ===============-->
 
-                    <!--==================== PLACES CARD 2 ====================-->
-
-
-                    <!--==================== PLACES CARD 4 ====================-->
-
-
-                    <!--==================== PLACES CARD 5 ====================-->
-
-
-            <!--==================== SUBSCRIBE ====================-->
-
-
-            <!--==================== SPONSORS ====================-->
-
-
-        <!--==================== FOOTER ====================-->
-
-         <!--========== SCROLL UP ==========-->
-
-        <!--=============== SCROLL REVEAL===============-->
-
-        <!--=============== SWIPER JS ===============-->
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
+      <!--=============== MAIN JS ===============-->
+      <script src="./assets/js/main.js"></script>
     </body>
-</html>
+    </html>
