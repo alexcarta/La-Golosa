@@ -11,220 +11,381 @@
 
   <!--=============== SWIPER CSS ===============-->
 
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
-      <!-- <style>
-        @font-face {
-          font-family: "aqua";
-          src: url("./assets/font/aqua.ttf");
-        }
+  <!--=============== CSS ===============-->
 
-        .harlow {
-          font-family: "aqua";
-        }
-      </style> -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>La Golosa</title>
 
-      <!--=============== CSS ===============-->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
-      <link rel="stylesheet" href="./assets/css/styles.css">
-      <title>La Golosa</title>
+</head>
 
-      <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<body>
 
-    </head>
-    <body>
+  <!--==================== HEADER ====================-->
 
-      <!--==================== HEADER ====================-->
+  <header class="header" id="header">
 
-      <header class="header" id="header">
+    <nav class="nav container">
 
-        <nav class="nav container">
+      <a href="#" class="nav__logo">LA GOLOSA</a>
 
-          <a href="#" class="nav__logo">LA GOLOSA</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#discover" class="nav__link">Discover</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact Us</a>
+          </li>
+        </ul>
+        <i class="ri-close-circle-line nav__close" id="nav-close"></i>
 
-          <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#home" class="nav__link">Home</a>
-              </li>
-              <li class="nav__item">
-                <a href="#about" class="nav__link">About</a>
-              </li>
-              <li class="nav__item">
-                <a href="#discover" class="nav__link">Discover</a>
-              </li>
-              <li class="nav__item">
-                <a href="#contact" class="nav__link">Contact Us</a>
-              </li>
-            </ul>
-            <i class="ri-close-circle-line nav__close" id="nav-close"></i>
+      </div>
 
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!--==================== HOME ====================-->
+
+    <section class="home" id="home">
+
+      <img src="./assets/img/home1.jpg" alt="" class="home__img">
+
+      <div class="home__container container grid">
+
+        <div class="home__data">
+          <span class="home__data-subtitle">Discover Italy in London</span>
+          <h1 class="home__data-title">Get The <br> Best <b>Tastes of<br> Italy</b></h1>
+          <a href="#" class="button">Explore</a>
+        </div>
+
+        <div class="home__social">
+          <a href="https://www.facebook.com/lagolosalondon" target="_blank" class="home__social-link">
+            <i class="ri-facebook-box-line"></i>
+          </a>
+
+          <a href="https://www.instagram.com/la_golosa_london/?hl=en" target="_blank" class="home__social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+
+          <a href="https://deliveroo.co.uk/menu/london/highbury/la-golosa-deli" target="_blank" class="home__social-link">
+            <span class="iconify" data-icon="simple-icons:deliveroo" data-inline="false"></span>
+          </a>
+        </div>
+
+        <div class="home__info">
+          <div>
+            <span class="home__info-title">5 Italian must-haves</span>
+            <a href="" class="button button--flex button--link home__info-button">
+              More <i class="ri-arrow-right-line"></i>
+            </a>
           </div>
 
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-line"></i>
+          <div class="home__info-overlay">
+            <img src="./assets/img/home2.jpg" alt="" class="home__info-img">
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+
+    <section class="about section" id="about">
+
+      <div class="about__container contaienr grid">
+        <div class="about__data">
+          <h2 class="section__title about__title">More information <br> about us</h2>
+          <p class="about__description"><b>La Golosa</b> is a delightful yet sparkling Italian-Sardinian deli-shop, a fine gem nested in London Highbury/Islington, born from the love for our roots. You can choose among the most diverse sortiment of high quality Italian brands or shop some fresh goodies coming all the way from Sardinia.
+          </p>
+
+          <a href="https://deliveroo.co.uk/menu/london/highbury/la-golosa-deli" class="button">Get a delivery  <span class="iconify" data-icon="simple-icons:deliveroo" data-inline="false"></span></a>
+          <!-- or a link with a map can be cool -->
+        </div>
+
+        <div class="about__img">
+          <div class="about__img-overlay">
+            <img src="./assets/img/about1.jpg" alt="" class="about__img-one">
           </div>
 
-        </nav>
-      </header>
+          <div class="about__img-overlay">
+            <img src="./assets/img/about2.jpg" alt="" class="about__img-two">
+          </div>
 
-      <main class="main">
+        </div>
 
-        <!--==================== HOME ====================-->
+      </div>
+    </section>
 
-        <section class="home" id="home">
+    <!--==================== DISCOVER ====================-->
 
-          <img src="./assets/img/home1.jpg" alt="" class="home__img">
+    <section class="discover section" id="section">
+      <h2 class="section__title">Discover the 5 <br> Italian must-haves</h2>
 
-          <div class="home__container container grid">
+      <div class="discover__container container swiper-container">
 
-            <div class="home__data">
-              <span class="home__data-subtitle">Discover Italy in London</span>
-              <h1 class="home__data-title">Get The <br> Best <b>Tastes of<br> Italy</b></h1>
-              <a href="#" class="button">Explore</a>
+        <div class="swiper-wrapper">
+
+          <!-- DISCOVER 1 -->
+
+          <div class="discover__card">
+            <img src="./assets/img/discover1.jpg" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Coffee</h2>
+              <span class="discover__description">How can you even imagine of doing something without drinking a good coffee first? We got your back, come and get one at our bar!</span>
             </div>
+          </div>
 
-            <div class="home__social">
-              <a href="https://www.facebook.com/lagolosalondon" target="_blank" class="home__social-link">
-                <i class="ri-facebook-box-line"></i>
-              </a>
+          <!-- DISCOVER 2 -->
 
-              <a href="https://www.instagram.com/la_golosa_london/?hl=en" target="_blank" class="home__social-link">
-                <i class="ri-instagram-line"></i>
-              </a>
-
-              <a href="https://deliveroo.co.uk/menu/london/highbury/la-golosa-deli" target="_blank" class="home__social-link">
-                <span class="iconify" data-icon="simple-icons:deliveroo" data-inline="false"></span>
-              </a>
+          <div class="discover__card swiper-slide">
+            <img src="./assets/img/discover2.jpg" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Pasta</h2>
+              <span class="discover__description">There is pasta and there is Pasta, we only sell the latter. Come to have a look to the big choice of Italian high quality pasta brands, and don't forget: <em>al dente</em> is the way!</span>
             </div>
+          </div>
 
-            <div class="home__info">
+          <!-- DISCOVER 3 -->
+
+          <div class="discover__card swiper-slide">
+            <img src="./assets/img/discover3.jpg" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Dessert</h2>
+              <span class="discover__description">Apetite but not real hunger, just enough for a litle pastry? We have gluten-free cannoli, how about that?</span>
+            </div>
+          </div>
+
+          <!-- DISCOVER 4 -->
+
+          <div class="discover__card swiper-slide">
+            <img src="./assets/img/discover4.jpg" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Aperitivo</h2>
+              <span class="discover__description">Ok, that's something you don't want to joke around! After the office, for a gather with some friends at your's, serve them some real Aperol spritz, we hand you some bottles, come over!</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </section>
+
+    <!--================== TESTIMONIAL ==================-->
+
+    <section class="testimonial section">
+
+      <h2 class="section__title">Google Rating 5/5</h2>
+
+      <div class="testimonial__container swiper-container container">
+
+        <div class="swiper-wrapper" id="swiper-testimonial">
+
+          <!-- 1 -->
+
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="./assets/img/testimonial1.png" alt="" class="testimonial__img">
+
+                <div>
+                  <h3 class="testimonial__name">Alessandro</h3>
+                  <span class="testimonial__client">Client</span>
+                </div>
+              </div>
+
               <div>
-                <span class="home__info-title">5 Italian must-haves</span>
-                <a href="" class="button button--flex button--link home__info-button">
-                  More <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-
-              <div class="home__info-overlay">
-                <img src="./assets/img/home2.jpg" alt="" class="home__info-img">
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
               </div>
             </div>
 
-
+            <p class="testimonial__description">OMG I literally gagged when I saw the signboard and I had to get inside. I´ve been craving for Italian snacks and deli not very easy to find in UK, and guess what, they have FONZIES!!! I loved it! love the place, love the layouts, love the food, and the girl who attended me was so sparkling and nice. I gotta get back there anytime soon!</p>
           </div>
 
-        </section>
+          <!-- 2 -->
 
-        <!--==================== ABOUT ====================-->
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="./assets/img/testimonial2.png" alt="" class="testimonial__img">
 
-        <section class="about section" id="about">
-
-          <div class="about__container contaienr grid">
-            <div class="about__data">
-              <h2 class="section__title about__title">More information <br> about us</h2>
-              <p class="about__description"><b>La Golosa</b> is a delightful yet sparkling Italian-Sardinian deli-shop, a fine gem nested in London Highbury/Islington, born from the love for our roots. You can choose among the most diverse sortiment of high quality Italian brands or shop some fresh goodies coming all the way from Sardinia.
-              </p>
-
-              <a href="" class="button">Get a delivery  <span class="iconify" data-icon="simple-icons:deliveroo" data-inline="false"></span></a>
-              <!-- or a link with a map can be cool -->
-            </div>
-
-            <div class="about__img">
-              <div class="about__img-overlay">
-                <img src="./assets/img/about1.jpg" alt="" class="about__img-one">
+                <div>
+                  <h3 class="testimonial__name">Luiza</h3>
+                  <span class="testimonial__client">Client</span>
+                </div>
               </div>
 
-              <div class="about__img-overlay">
-                <img src="./assets/img/about2.jpg" alt="" class="about__img-two">
+              <div>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+               <i class="ri-star-line testimonial__icon-star"></i>
               </div>
-
             </div>
 
+            <p class="testimonial__description">This shop is amazing. But it's not just the wonderful selection of ingredients and food you get in there - for me the reason I go back is the wonderful team who work there! Without fail I go there for my morning coffee each day. A friend Ciao smile always greets me and they give me a little sweet treat go with my coffee each day. Lovely service. Great coffee!!</p>
           </div>
 
-        </section>
+          <!-- 3 -->
 
-        <!--==================== DISCOVER ====================-->
-
-        <section class="discover section" id="section">
-          <h2 class="section__title">Discover the 5 <br> Italian must-haves</h2>
-
-          <div class="discover__container container">
-
-            <div>
-
-              <!-- DISCOVER 1 -->
-
-              <div class="discover__card">
-                <img src="./assets/img/discover1.jpg" alt="" class="discover__img">
-                <div class="discover__data">
-                  <h2 class="discover__title">Coffee</h2>
-                  <span class="discover__description">How can you even imagine of doing something without drinking a good coffee first? We got your back, come and get one at our bar!</span>
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="./assets/img/testimonial3.png" alt="" class="testimonial__img">
+                <div>
+                  <h3 class="testimonial__name">Gianpaolo</h3>
+                 <span class="testimonial__client">Client</span>
                 </div>
               </div>
 
-              <!-- DISCOVER 2 -->
-
-              <div class="discover__card">
-                <img src="./assets/img/discover2.jpg" alt="" class="discover__img">
-                <div class="discover__data">
-                  <h2 class="discover__title">Pasta</h2>
-                  <span class="discover__description">There is pasta and there is Pasta, we only sell the latter. Come to have a look to the big choice of Italian high quality pasta brands, and don't forget: <em>al dente</em> is the way!</span>
-                </div>
+              <div>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
               </div>
-
-              <!-- DISCOVER 3 -->
-
-              <div class="discover__card">
-                <img src="./assets/img/discover3.jpg" alt="" class="discover__img">
-                <div class="discover__data">
-                  <h2 class="discover__title">Dessert</h2>
-                  <span class="discover__description">Apetite but not real hunger, just enough for a litle pastry? We have gluten-free cannoli, how about that?</span>
-                </div>
-              </div>
-
-              <!-- DISCOVER 4 -->
-
-              <div class="discover__card">
-                <img src="./assets/img/discover4.jpg" alt="" class="discover__img">
-                <div class="discover__data">
-                  <h2 class="discover__title">Aperitivo</h2>
-                  <span class="discover__description">Ok, that's something you don't want to joke around! After the office, for a gather with some friends at your's, serve them some real Aperol spritz, we hand you some bottles, come over!</span>
-                </div>
-              </div>
-
             </div>
 
+            <p class="testimonial__description">This shop can boast an amazing collection of Italian products chosen among national and regional excellencies. A piece of Italian culture in the heart of London which is a precious resource for Italian people living in the City and for anyone loving the little pleasures of life.</p>
           </div>
 
+          <!-- 4 -->
 
-        </section>
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="./assets/img/testimonial4.png" alt="" class="testimonial__img">
+                <div>
+                  <h3 class="testimonial__name">Anna</h3>
+                  <span class="testimonial__client">Client</span>
+                </div>
+              </div>
 
-        <!--==================== EXPERIENCE ====================-->
+              <div>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
+              </div>
+            </div>
 
+            <p class="testimonial__description">I simply ADORE this place! I found all those genuine products from Sardinia that stained me more than anything else here in London! Spectacular ham, the bottarga that reminds me of the sea, the cheese is simply irresistible. I also found a great selection of Italian products that are difficult to find in London, I will definitely buy panettone for my Christmas at La Golosa, and I will feel at home! The staff is super helpful and prepared, as well as friendly, I recommend everyone to go and visit them!</p>
+          </div>
 
-        <!--==================== VIDEO ====================-->
+        </div>
 
+        <div class="swiper-pagination"></div>
 
-        <!--==================== PLACES ====================-->
+      </div>
+</section>
 
+<!--==================== CONTACTUS ====================-->
 
-        <!--==================== SUBSCRIBE ====================-->
+<section class="contact section" id="contact">
+  <h2 class="section__title">Contact us</h2>
 
+  <div class="contact__container container grid">
 
-        <!--==================== SPONSORS ====================-->
+    <div>
+      <div class="contact__information">
+        <i class="ri-phone-line contact__icon"></i>
 
-      </main>
+        <div>
+          <h3 class="contact__title">Call us</h3>
+          <span class="contact__subtitle">+44 7707 304087</span>
+        </div>
 
-      <!--==================== FOOTER ====================-->
+      </div>
 
-      <!--========== SCROLL UP ==========-->
+      <div class="contact__information">
+        <i class="ri-mail-line contact__icon"></i>
 
-      <!--=============== SCROLL REVEAL===============-->
+        <div>
+          <h3 class="contact__title">Email</h3>
+          <span class="contact__subtitle">lagolosa@lagolosa.co.uk</span>
+        </div>
+      </div>
 
-      <!--=============== SWIPER JS ===============-->
+      <div class="contact__information">
+        <i class="ri-map-pin-line contact__icon"></i>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="./assets/js/main.js"></script>
-    </body>
-    </html>
+        <div>
+          <h3 class="contact__title">Location</h3>
+          <span class="contact__subtitle">238 St Paul's Rd, London N1 2LJ, United Kingdom</span>
+        </div>
+      </div>
+    </div>
+
+    <form action="https://formsubmit.co/alessandro.carta91@gmail.com" method="POST" class="contact__from grid">
+      <div class="contact__inputs grid">
+        <div class="contact__content">
+          <label for="" class="contact__label">Name</label>
+          <input type="name" name="name" class="contact__input">
+        </div>
+        <div class="contact__content">
+          <label for="" class="contact__label">E-Mail</label>
+          <input type="email" name="email" class="contact__input">
+        </div>
+        <div class="contact__content">
+          <label for="" class="contact__label">Object</label>
+          <input type="object" name="object" class="contact__input">
+        </div>
+        <div class="contact__content">
+          <label for="" class="contact__label">Message</label>
+          <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="contact__submit button button-flex">
+            Send Message <i class="uil uil-message button__icon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </form>
+</div>
+</section>
+
+</main>
+
+<!--==================== FOOTER ====================-->
+
+<!--========== SCROLL UP ==========-->
+
+<!--=============== SCROLL REVEAL===============-->
+
+<!--=============== SWIPER JS ===============-->
+
+<script src="./assets/js/swiper-bundle.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>

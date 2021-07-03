@@ -43,6 +43,42 @@ window.addEventListener('scroll', scrollHeader)
 
 /*==================== SWIPER DISCOVER ====================*/
 
+var swiper = new Swiper(".discover__container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  coverflowEffect: {
+    rotate: 50,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  }
+
+});
+
+/*==================== SWIPER TESTIMONIAL ====================*/
+
+var swiperTestimonial = new Swiper(".testimonial__container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  spaceBetween: 32,
+  coverflowEffect: {
+    rotate: 0,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  }
+
+});
+
+
 /*==================== VIDEO ====================*/
 
 
