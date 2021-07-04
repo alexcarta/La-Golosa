@@ -135,7 +135,7 @@
 
     <!--==================== DISCOVER ====================-->
 
-    <section class="discover section" id="section">
+    <section class="discover section" id="gallery">
       <h2 class="section__title">Discover the 5 <br> Italian must-haves</h2>
 
       <div class="discover__container container swiper-container">
@@ -191,7 +191,7 @@
 
     <!--================== TESTIMONIAL ==================-->
 
-    <section class="testimonial section">
+    <section class="testimonial section" id="testimonial">
 
       <h2 class="section__title">Google Rating 5/5</h2>
 
@@ -242,7 +242,7 @@
                 <i class="ri-star-line testimonial__icon-star"></i>
                 <i class="ri-star-line testimonial__icon-star"></i>
                 <i class="ri-star-line testimonial__icon-star"></i>
-               <i class="ri-star-line testimonial__icon-star"></i>
+                <i class="ri-star-line testimonial__icon-star"></i>
               </div>
             </div>
 
@@ -257,7 +257,7 @@
                 <img src="./assets/img/testimonial3.png" alt="" class="testimonial__img">
                 <div>
                   <h3 class="testimonial__name">Gianpaolo</h3>
-                 <span class="testimonial__client">Client</span>
+                  <span class="testimonial__client">Client</span>
                 </div>
               </div>
 
@@ -302,79 +302,144 @@
         <div class="swiper-pagination"></div>
 
       </div>
-</section>
+    </section>
 
-<!--==================== CONTACTUS ====================-->
+    <!--==================== CONTACTUS ====================-->
 
-<section class="contact section" id="contact">
-  <h2 class="section__title">Contact us</h2>
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact us</h2>
 
-  <div class="contact__container container grid">
-
-    <div>
-      <div class="contact__information">
-        <i class="ri-phone-line contact__icon"></i>
+      <div class="contact__container container grid">
 
         <div>
-          <h3 class="contact__title">Call us</h3>
-          <span class="contact__subtitle">+44 7707 304087</span>
+          <div class="contact__information">
+            <i class="ri-phone-line contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Call us</h3>
+              <span class="contact__subtitle">+44 7707 304087</span>
+            </div>
+
+          </div>
+
+          <div class="contact__information">
+            <i class="ri-mail-line contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">lagolosadeli@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="ri-map-pin-line contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__subtitle">238 St Paul's Rd, London N1 2LJ, United Kingdom</span>
+            </div>
+          </div>
         </div>
 
-      </div>
+        <form action="https://formsubmit.co/lagolosadeli@gmail.com" method="POST" class="contact__from grid">
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="" class="contact__label">Name</label>
+              <input type="name" name="name" class="contact__input">
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">E-Mail</label>
+              <input type="email" name="email" class="contact__input">
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Object</label>
+              <input type="object" name="object" class="contact__input">
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Message</label>
+              <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+            </div>
 
-      <div class="contact__information">
-        <i class="ri-mail-line contact__icon"></i>
+            <div>
+              <button type="submit" class="contact__submit button button-flex" style="margin: 0;">
+                Send Message <i class="uil uil-message button__icon"></i>
+              </button>
+            </div>
 
-        <div>
-          <h3 class="contact__title">Email</h3>
-          <span class="contact__subtitle">lagolosa@lagolosa.co.uk</span>
+          </div>
         </div>
-      </div>
-
-      <div class="contact__information">
-        <i class="ri-map-pin-line contact__icon"></i>
-
-        <div>
-          <h3 class="contact__title">Location</h3>
-          <span class="contact__subtitle">238 St Paul's Rd, London N1 2LJ, United Kingdom</span>
-        </div>
-      </div>
+      </form>
     </div>
-
-    <form action="https://formsubmit.co/alessandro.carta91@gmail.com" method="POST" class="contact__from grid">
-      <div class="contact__inputs grid">
-        <div class="contact__content">
-          <label for="" class="contact__label">Name</label>
-          <input type="name" name="name" class="contact__input">
-        </div>
-        <div class="contact__content">
-          <label for="" class="contact__label">E-Mail</label>
-          <input type="email" name="email" class="contact__input">
-        </div>
-        <div class="contact__content">
-          <label for="" class="contact__label">Object</label>
-          <input type="object" name="object" class="contact__input">
-        </div>
-        <div class="contact__content">
-          <label for="" class="contact__label">Message</label>
-          <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
-        </div>
-
-        <div>
-          <button type="submit" class="contact__submit button button-flex">
-            Send Message <i class="uil uil-message button__icon"></i>
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </form>
-</div>
-</section>
+  </section>
 
 </main>
 
 <!--==================== FOOTER ====================-->
+
+<footer class="footer section">
+  <div class="footer__container container grid">
+    <div class="footer__content grid">
+      <div class="content__data">
+        <h3 class="footer__title">La Golosa Deli</h3>
+        <p>Unique and fresh products from <br>Sardinia.</p>
+
+        <div>
+          <a href="https://www.facebook.com/lagolosalondon" target="_blank" class="footer__social">
+            <i class="ri-facebook-box-line"></i>
+          </a>
+
+          <a href="https://www.instagram.com/la_golosa_london/?hl=en" target="_blank" class="footer__social">
+            <i class="ri-instagram-line"></i>
+          </a>
+
+          <a href="https://deliveroo.co.uk/menu/london/highbury/la-golosa-deli" target="_blank" class="footer__social">
+            <span class="iconify" data-icon="simple-icons:deliveroo" data-inline="false"></span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer__enlaces">
+        <div class="footer__data">
+        <h3 class="footer__subtitle">About</h3>
+
+        <ul>
+          <li class="footer__item">
+            <a href="#header" class="footer__link">Home</a>
+          </li>
+          <li class="footer__item">
+            <a href="#gallery" class="footer__link">Gallery</a>
+          </li>
+          <li class="footer__item">
+            <a href="#testimonial" class="footer__link">Ratings</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__data">
+        <h3 class="footer__subtitle">Shop</h3>
+
+        <ul>
+          <li class="footer__item">
+            <a href="#location" class="footer__link">Location</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://deliveroo.co.uk/menu/london/highbury/la-golosa-deli" class="footer__link">Order</a>
+          </li>
+          <li class="footer__item">
+            <a href="#contact" class="footer__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+    </div>
+
+    <div class="footer__rights">
+      <p class="footer__copy"> &#169; 2021 La Golosa Deli. All rights reserved. Developed by <a href="https://alessandrocarta.herokuapp.com/">Alessandro Frontend Developer</a> </p>
+    </div>
+  </div>
+</footer>
 
 <!--========== SCROLL UP ==========-->
 
