@@ -43,52 +43,84 @@ window.addEventListener('scroll', scrollHeader)
 
 /*==================== SWIPER DISCOVER ====================*/
 
-var swiper = new Swiper(".discover__container", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  loop: true,
-  coverflowEffect: {
-    rotate: 50,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable:true,
-  }
+// var swiper = new Swiper(".discover__container", {
+//   effect: "coverflow",
+//   grabCursor: true,
+//   centeredSlides: true,
+//   slidesPerView: "auto",
+//   loop: true,
+//   coverflowEffect: {
+//     rotate: 50,
+//   },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable:true,
+//   }
 
+// });
+
+var swiper = new Swiper(".discover__container", {
+  loop:true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  mousewheel: true,
+  keyboard: true,
 });
 
 /*==================== SWIPER TESTIMONIAL ====================*/
 
-var swiperTestimonial = new Swiper(".testimonial__container", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  loop: true,
-  spaceBetween: 32,
-  coverflowEffect: {
-    rotate: 0,
+var swiper2 = new Swiper(".mySwiper", {
+  cssMode: true,
+  loop:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable:true,
-  }
-
+  },
+  mousewheel: true,
+  keyboard: true,
 });
 
 
-/*==================== VIDEO ====================*/
+/*==================== GOOGLE MAPS ====================*/
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+    });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+    });
+}
 
 
-/*==================== SHOW SCROLL UP ====================*/
+
+      /*==================== VIDEO ====================*/
 
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+      /*==================== SHOW SCROLL UP ====================*/
 
 
-/*==================== SCROLL REVEAL ANIMATION ====================*/
+      /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 
-/*==================== DARK LIGHT THEME ====================*/
+      /*==================== SCROLL REVEAL ANIMATION ====================*/
+
+
+      /*==================== DARK LIGHT THEME ====================*/

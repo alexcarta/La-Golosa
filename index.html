@@ -8,7 +8,6 @@
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-
   <!--=============== SWIPER CSS ===============-->
 
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
@@ -35,16 +34,22 @@
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link">Home</a>
+            <a href="#home" class="nav__link"><i class="ri-home-line menu__icon"></i> Home</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#about" class="nav__link"><i class="ri-user-line menu__icon"></i> About us</a>
           </li>
           <li class="nav__item">
-            <a href="#discover" class="nav__link">Discover</a>
+            <a href="#discover" class="nav__link"><i class="ri-compass-line menu__icon"></i> Discover</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact Us</a>
+            <a href="#testimonial" class="nav__link"><i class="ri-hearts-line menu__icon"></i> Ratings</a>
+          </li>
+          <li class="nav__item">
+            <a href="#location" class="nav__link"><i class="ri-map-pin-2-line menu__icon"></i> Location</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link"><i class="ri-chat-1-line menu__icon"></i> Contact Us</a>
           </li>
         </ul>
         <i class="ri-close-circle-line nav__close" id="nav-close"></i>
@@ -69,8 +74,8 @@
       <div class="home__container container grid">
 
         <div class="home__data">
-          <span class="home__data-subtitle">Discover Italy in London</span>
-          <h1 class="home__data-title">Get The <br> Best <b>Tastes of<br> Italy</b></h1>
+          <span class="home__data-subtitle">Discover the taste of Italy, in London</span>
+          <h1 class="home__data-title">Unique and fresh <br> goodies <b> from <br> SARDINIA</b></h1>
           <a href="#" class="button">Explore</a>
         </div>
 
@@ -90,8 +95,8 @@
 
         <div class="home__info">
           <div>
-            <span class="home__info-title">5 Italian must-haves</span>
-            <a href="" class="button button--flex button--link home__info-button">
+            <span class="home__info-title">Get the 5 Italian must-haves</span>
+            <a href="#discover" class="button button--flex button--link home__info-button">
               More <i class="ri-arrow-right-line"></i>
             </a>
           </div>
@@ -111,7 +116,7 @@
 
       <div class="about__container contaienr grid">
         <div class="about__data">
-          <h2 class="section__title about__title">More information <br> about us</h2>
+          <h2 class="section__title about__title">ABOUT US</h2>
           <p class="about__description"><b>La Golosa</b> is a delightful yet sparkling Italian-Sardinian deli-shop, a fine gem nested in London Highbury/Islington, born from the love for our roots. You can choose among the most diverse sortiment of high quality Italian brands or shop some fresh goodies coming all the way from Sardinia.
           </p>
 
@@ -135,67 +140,75 @@
 
     <!--==================== DISCOVER ====================-->
 
-    <section class="discover section" id="gallery">
-      <h2 class="section__title">Discover the 5 <br> Italian must-haves</h2>
+    <section class="discover section" id="discover">
+      <h2 class="section__title">THE 5 ITALIAN MUST-HAVES</h2>
 
       <div class="discover__container container swiper-container">
-
         <div class="swiper-wrapper">
-
-          <!-- DISCOVER 1 -->
-
-          <div class="discover__card">
-            <img src="./assets/img/discover1.jpg" alt="" class="discover__img">
+          <!--==================== DISCOVER 1 ====================-->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/discover1.jpg" alt="" class="discover__img">
             <div class="discover__data">
-              <h2 class="discover__title">Coffee</h2>
+              <h2 class="discover__title">1. Coffee</h2>
               <span class="discover__description">How can you even imagine of doing something without drinking a good coffee first? We got your back, come and get one at our bar!</span>
             </div>
           </div>
 
-          <!-- DISCOVER 2 -->
-
+          <!--==================== DISCOVER 2 ====================-->
           <div class="discover__card swiper-slide">
-            <img src="./assets/img/discover2.jpg" alt="" class="discover__img">
+            <img src="assets/img/discover2.jpg" alt="" class="discover__img">
             <div class="discover__data">
-              <h2 class="discover__title">Pasta</h2>
+              <h2 class="discover__title">2 .Pasta</h2>
               <span class="discover__description">There is pasta and there is Pasta, we only sell the latter. Come to have a look to the big choice of Italian high quality pasta brands, and don't forget: <em>al dente</em> is the way!</span>
             </div>
           </div>
 
-          <!-- DISCOVER 3 -->
-
+          <!--==================== DISCOVER 3 ====================-->
           <div class="discover__card swiper-slide">
-            <img src="./assets/img/discover3.jpg" alt="" class="discover__img">
+            <img src="assets/img/discover3.jpg" alt="" class="discover__img">
             <div class="discover__data">
-              <h2 class="discover__title">Dessert</h2>
+              <h2 class="discover__title">3. Dessert</h2>
               <span class="discover__description">Apetite but not real hunger, just enough for a litle pastry? We have gluten-free cannoli, how about that?</span>
             </div>
           </div>
 
-          <!-- DISCOVER 4 -->
-
+          <!--==================== DISCOVER 4 ====================-->
           <div class="discover__card swiper-slide">
-            <img src="./assets/img/discover4.jpg" alt="" class="discover__img">
+            <img src="assets/img/discover4.jpg" alt="" class="discover__img">
             <div class="discover__data">
-              <h2 class="discover__title">Aperitivo</h2>
+              <h2 class="discover__title">4. Aperitivo</h2>
               <span class="discover__description">Ok, that's something you don't want to joke around! After the office, for a gather with some friends at your's, serve them some real Aperol spritz, we hand you some bottles, come over!</span>
+            </div>
+          </div>
+
+          <!--==================== DISCOVER 5 ====================-->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/discover5.jpg" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">5. Cheese</h2>
+              <span class="discover__description">It is as cheesy as it sounds. Do you know that Sardinia has the most delicious and tasty cheeses of the world? Well, now you know, come over to taste them!</span>
             </div>
           </div>
 
         </div>
 
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"><i class="ri-arrow-right-s-fill discover__arrows"></i></div>
+        <div class="swiper-button-prev"><i class="ri-arrow-left-s-fill discover__arrows"></i></div>
+        <!-- <div class="swiper-pagination discover__pagination"></div -->
 
       </div>
+
     </section>
+
 
     <!--================== TESTIMONIAL ==================-->
 
     <section class="testimonial section" id="testimonial">
 
-      <h2 class="section__title">Google Rating 5/5</h2>
+      <h2 class="section__title">WHAT THEY SAY<br><br><a target="_blank" href="https://www.google.com/search?q=la+golosa+deli&rlz=1C5CHFA_enDE956DE957&oq=la+&aqs=chrome.0.69i59l3j69i57j69i61j69i60l3.5775j0j4&sourceid=chrome&ie=UTF-8#lrd=0x48761baca9951693:0xfebbbae25a0947bf,1,,," class="testimonial__google"><img src="./assets/img/google.svg" alt="" style="width: 20px;"></a></h2>
 
-      <div class="testimonial__container swiper-container container">
+
+      <div class="testimonial__container swiper-container container mySwiper">
 
         <div class="swiper-wrapper" id="swiper-testimonial">
 
@@ -294,163 +307,178 @@
               </div>
             </div>
 
-            <p class="testimonial__description">I simply ADORE this place! I found all those genuine products from Sardinia that stained me more than anything else here in London! Spectacular ham, the bottarga that reminds me of the sea, the cheese is simply irresistible. I also found a great selection of Italian products that are difficult to find in London, I will definitely buy panettone for my Christmas at La Golosa, and I will feel at home! The staff is super helpful and prepared, as well as friendly, I recommend everyone to go and visit them!</p>
+            <p class="testimonial__description">I simply ADORE this place! I found all those genuine products from Sardinia that stained me more than anything else here in London! Spectacular ham, the bottarga that reminds me of the sea, the cheese is simply irresistible. I also found a great selection of Italian products that are difficult to find in London, I will definitely buy panettone for my Christmas at La Golosa, and I will feel at home!</p>
+          </div>
+
+          <div class="swiper-button-next"><i class="ri-arrow-right-s-fill testimonial__arrows"></i></div>
+          <div class="swiper-button-prev"><i class="ri-arrow-left-s-fill testimonial__arrows"></i></div>
+          <div class="swiper-pagination"></div>
+
+
+        </div>
+      </section>
+
+      <!--==================== LOCATION ====================-->
+
+      <section class="location section" id="location">
+        <h2 class="section__title">COME VISIT</h2>
+
+        <div class="location__container container grid">
+          <div class="location__content grid">
+            <div class="location__information">
+              <i class="ri-map-pin-line contact__icon"></i>
+
+              <div>
+                <h3 class="location__title">Address</h3>
+                <span class="location__subtitle">238 St Paul's Rd, London N1 2LJ, United Kingdom</span>
+              </div>
+            </div>
+            <div class="location__map" id="map">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!--==================== CONTACTUS ====================-->
+
+      <section class="contact section" id="contact">
+        <h2 class="section__title">GET IN TOUCH</h2>
+
+        <div class="contact__container container grid">
+
+          <div>
+            <div class="contact__information">
+              <i class="ri-phone-line contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Phone</h3>
+                <span class="contact__subtitle">+44 7707 304087</span>
+              </div>
+
+            </div>
+
+            <div class="contact__information">
+              <i class="ri-mail-line contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">lagolosadeli@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="https://formsubmit.co/lagolosadeli@gmail.com" method="POST" class="contact__from grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="name" name="name" class="contact__input">
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">E-Mail</label>
+                <input type="email" name="email" class="contact__input">
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Object</label>
+                <input type="object" name="object" class="contact__input">
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Message</label>
+                <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+              </div>
+
+              <div class="contact__button">
+                <button type="submit" class="contact__submit button button-flex" style="margin: 0;">
+                  Send Message <i class="ri-send-plane-2-line"></i></i>
+                </button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="content__data">
+            <h3 class="footer__title">La Golosa Deli</h3>
+            <p>Unique and fresh products from <br>Sardinia.</p>
+
+            <div class="footer__network">
+              <a href="https://www.facebook.com/lagolosalondon" target="_blank" class="footer__social">
+                <i class="ri-facebook-box-line"></i>
+              </a>
+
+              <a href="https://www.instagram.com/la_golosa_london/?hl=en" target="_blank" class="footer__social">
+                <i class="ri-instagram-line"></i>
+              </a>
+
+              <a href="https://deliveroo.co.uk/menu/london/highbury/la-golosa-deli" target="_blank" class="footer__social">
+                <span class="iconify" data-icon="simple-icons:deliveroo" data-inline="false"></span>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="footer__enlaces">
+            <div class="footer__data">
+              <h3 class="footer__subtitle">About</h3>
+
+              <ul>
+                <li class="footer__item">
+                  <a href="#header" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#gallery" class="footer__link">Gallery</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#testimonial" class="footer__link">Ratings</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__data">
+              <h3 class="footer__subtitle">Shop</h3>
+
+              <ul>
+                <li class="footer__item">
+                  <a href="#location" class="footer__link">Location</a>
+                </li>
+                <li class="footer__item">
+                  <a href="https://deliveroo.co.uk/menu/london/highbury/la-golosa-deli" class="footer__link">Order</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#contact" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
         </div>
 
-        <div class="swiper-pagination"></div>
-
-      </div>
-    </section>
-
-    <!--==================== CONTACTUS ====================-->
-
-    <section class="contact section" id="contact">
-      <h2 class="section__title">Contact us</h2>
-
-      <div class="contact__container container grid">
-
-        <div>
-          <div class="contact__information">
-            <i class="ri-phone-line contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title">Call us</h3>
-              <span class="contact__subtitle">+44 7707 304087</span>
-            </div>
-
-          </div>
-
-          <div class="contact__information">
-            <i class="ri-mail-line contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title">Email</h3>
-              <span class="contact__subtitle">lagolosadeli@gmail.com</span>
-            </div>
-          </div>
-
-          <div class="contact__information">
-            <i class="ri-map-pin-line contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title">Location</h3>
-              <span class="contact__subtitle">238 St Paul's Rd, London N1 2LJ, United Kingdom</span>
-            </div>
-          </div>
+        <div class="footer__rights">
+          <p class="footer__copy"> &#169; 2021 La Golosa Deli. All rights reserved. Developed by <a href="https://alessandrocarta.herokuapp.com/">Alessandro Frontend Developer</a> </p>
         </div>
-
-        <form action="https://formsubmit.co/lagolosadeli@gmail.com" method="POST" class="contact__from grid">
-          <div class="contact__inputs grid">
-            <div class="contact__content">
-              <label for="" class="contact__label">Name</label>
-              <input type="name" name="name" class="contact__input">
-            </div>
-            <div class="contact__content">
-              <label for="" class="contact__label">E-Mail</label>
-              <input type="email" name="email" class="contact__input">
-            </div>
-            <div class="contact__content">
-              <label for="" class="contact__label">Object</label>
-              <input type="object" name="object" class="contact__input">
-            </div>
-            <div class="contact__content">
-              <label for="" class="contact__label">Message</label>
-              <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
-            </div>
-
-            <div>
-              <button type="submit" class="contact__submit button button-flex" style="margin: 0;">
-                Send Message <i class="uil uil-message button__icon"></i>
-              </button>
-            </div>
-
-          </div>
-        </div>
-      </form>
-    </div>
-  </section>
-
-</main>
-
-<!--==================== FOOTER ====================-->
-
-<footer class="footer section">
-  <div class="footer__container container grid">
-    <div class="footer__content grid">
-      <div class="content__data">
-        <h3 class="footer__title">La Golosa Deli</h3>
-        <p>Unique and fresh products from <br>Sardinia.</p>
-
-        <div>
-          <a href="https://www.facebook.com/lagolosalondon" target="_blank" class="footer__social">
-            <i class="ri-facebook-box-line"></i>
-          </a>
-
-          <a href="https://www.instagram.com/la_golosa_london/?hl=en" target="_blank" class="footer__social">
-            <i class="ri-instagram-line"></i>
-          </a>
-
-          <a href="https://deliveroo.co.uk/menu/london/highbury/la-golosa-deli" target="_blank" class="footer__social">
-            <span class="iconify" data-icon="simple-icons:deliveroo" data-inline="false"></span>
-          </a>
-        </div>
-
       </div>
+    </footer>
 
-      <div class="footer__enlaces">
-        <div class="footer__data">
-        <h3 class="footer__subtitle">About</h3>
+    <!--=============== SWIPER JS ===============-->
 
-        <ul>
-          <li class="footer__item">
-            <a href="#header" class="footer__link">Home</a>
-          </li>
-          <li class="footer__item">
-            <a href="#gallery" class="footer__link">Gallery</a>
-          </li>
-          <li class="footer__item">
-            <a href="#testimonial" class="footer__link">Ratings</a>
-          </li>
-        </ul>
-      </div>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
-      <div class="footer__data">
-        <h3 class="footer__subtitle">Shop</h3>
+    <!--=============== GOOGLE MAPS ===============-->
 
-        <ul>
-          <li class="footer__item">
-            <a href="#location" class="footer__link">Location</a>
-          </li>
-          <li class="footer__item">
-            <a href="https://deliveroo.co.uk/menu/london/highbury/la-golosa-deli" class="footer__link">Order</a>
-          </li>
-          <li class="footer__item">
-            <a href="#contact" class="footer__link">Contact</a>
-          </li>
-        </ul>
-      </div>
-      </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnqx_kec57drhpCLEeie85kkN4hnYv9YQ&callback=initMap&libraries=&v=weekly" async></script>
 
-    </div>
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
 
-    <div class="footer__rights">
-      <p class="footer__copy"> &#169; 2021 La Golosa Deli. All rights reserved. Developed by <a href="https://alessandrocarta.herokuapp.com/">Alessandro Frontend Developer</a> </p>
-    </div>
-  </div>
-</footer>
-
-<!--========== SCROLL UP ==========-->
-
-<!--=============== SCROLL REVEAL===============-->
-
-<!--=============== SWIPER JS ===============-->
-
-<script src="./assets/js/swiper-bundle.min.js"></script>
-
-<!--=============== MAIN JS ===============-->
-<script src="./assets/js/main.js"></script>
-
-</body>
-</html>
+  </body>
+  </html>
