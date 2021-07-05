@@ -124,13 +124,17 @@ img, video {
 }
 
 button, input {
-  border: none;
+  border: solid 1px black;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
 
 button {
   cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 10px 10px 2px 1px grey;
 }
 
 input {
@@ -219,6 +223,12 @@ input {
   display: flex;
   flex-direction: column;
   row-gap:  2.5rem;
+}
+
+.menu__icon {
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  margin-right: 5px;
 }
 
 .nav__link {
@@ -420,21 +430,24 @@ input {
 
 /*=============== DISCOVER ===============*/
 
-.discover__card, {
+.discover__card {
   position: relative;
   width: 200px;
-  overflow:  var(--img-hidden);
+  overflow: var(--img-hidden);
 }
 
 .discover__data {
   position: absolute;
   bottom: 1.5rem;
-  left: 1rem;
+  left: .5rem;
+  right: .5rem;
+  padding: 0.5rem;
 }
 
 .discover__title,
 .discover__description {
   color: var(--white-color);
+  font-weight: var(--font-semi-bold);
 }
 
 .discover__title {
@@ -442,24 +455,31 @@ input {
   margin-bottom: var(--mb-0-25);
 }
 
-.discover__description{
+.discover__description {
   display: block;
   font-size: var(--smaller-font-size);
 }
 
-.discover__img{
+.discover__img {
   transition: var(--img-transition);
 }
 
-.discover__img:hover{
+.discover__img:hover {
   transform: var(--img-scale);
 }
 
-.swiper-container-3d .swiper-slide-shadow.left,
-.swiper-container-3d .swiper-slide-shadow.right {
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
   background-image: none;
 }
 
+.discover__arrows {
+  color: var(--first-color);
+}
+
+.swiper-pagination {
+  color: var(--first-color);
+}
 /*=============== TESTIMONIAL ===============*/
 
 .testimonial__data,
@@ -488,7 +508,9 @@ input {
 }
 
 .testimonial__description {
-  margin-bottom: var(--mb-2-5);
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .testimonial__icon-star {
@@ -499,10 +521,30 @@ input {
   background-color: var(--first-color);
 }
 
+.testimonial__google {
+  place-self: center;
+  width:  20px;
+}
+
+.testimonial__arrows {
+  color: var(--first-color);
+  justify-content: space-around;
+  width: 100%;
+}
+
+/*.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: '';
+}*/
+
+.swiper-button-prev,
+.swiper-button-next{
+  font-size: 50px;
+}
 /*=============== CONTACT ===============*/
 
 .contact__container {
-  row-gap:  3rem;
+  row-gap:  5px;
 }
 
 .contact__information {
@@ -518,12 +560,14 @@ input {
   margin-right: var(--mb-0-75);
 }
 
-.contact__title {
+.contact__title,
+.location__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
 }
 
-.contact__subtitle{
+.contact__subtitle
+.location__subtitle,{
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
@@ -559,17 +603,33 @@ input {
   border: none;
 }
 
+.contact__button {
+  place-self:  center;
+}
+
 
 /*=============== LOCATION ===============*/
 
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
 
+.location__information {
+  display: flex;
+}
 
 /*=============== FOOTER ===============*/
 
 .footer__container {
-  row-gap: 5rem;
+  row-gap: 3rem;
   align-items: center;
   justify-content: center;
+  padding: 20px 0 20px;
+  background-color: var(--first-color);
+  margin: 0;
 }
 
 .footer__content {
@@ -588,6 +648,10 @@ input {
 
 .footer__title {
   margin-bottom: var(--mb-0-5);
+}
+
+.footer__network{
+  margin-top: 25px;
 }
 
 .footer__description {
@@ -824,3 +888,4 @@ input {
     height: 640px;
   }
 }
+
