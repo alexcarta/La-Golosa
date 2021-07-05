@@ -532,10 +532,10 @@ input {
   width: 100%;
 }
 
-/*.swiper-button-prev::after,
+.swiper-button-prev::after,
 .swiper-button-next::after{
   content: '';
-}*/
+}
 
 .swiper-button-prev,
 .swiper-button-next{
