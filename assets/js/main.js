@@ -96,7 +96,7 @@ var swiper2 = new Swiper(".mySwiper", {
 // Initialize and add the map
 function initMap() {
   // The location of Uluru
-  const laGolosa = { lat: -0.099, lng: 51.546 };
+  const laGolosa = { lat: 51.546, lng: -0.099 };
   // The map, centered at Uluru
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
