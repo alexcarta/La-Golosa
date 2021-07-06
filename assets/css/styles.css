@@ -329,6 +329,7 @@ input {
   right: 0;
   bottom: 1rem;
   width: 228px;
+  border-radius: 10px;
 }
 
 .home__info-title{
