@@ -41,26 +41,29 @@ function scrollHeader(){
 
 window.addEventListener('scroll', scrollHeader)
 
+/*==================== SWIPER GALLERY ====================*/
+
+var swiperGallery = new Swiper(".gallery__container", {
+  loop:true,
+  spaceBetween: 40,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  mousewheel: true,
+  keyboard: true,
+});
+
 /*==================== SWIPER DISCOVER ====================*/
 
-// var swiper = new Swiper(".discover__container", {
-//   effect: "coverflow",
-//   grabCursor: true,
-//   centeredSlides: true,
-//   slidesPerView: "auto",
-//   loop: true,
-//   coverflowEffect: {
-//     rotate: 50,
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable:true,
-//   }
 
-// });
-
-var swiper = new Swiper(".discover__container", {
+var swiperDiscover = new Swiper(".discover__container", {
   loop:true,
+  spaceBetween: 40,
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",
@@ -75,7 +78,7 @@ var swiper = new Swiper(".discover__container", {
 
 /*==================== SWIPER TESTIMONIAL ====================*/
 
-var swiper2 = new Swiper(".mySwiper", {
+var swiperTestimonial = new Swiper(".mySwiper", {
   cssMode: true,
   loop:true,
   navigation: {
@@ -93,33 +96,18 @@ var swiper2 = new Swiper(".mySwiper", {
 
 /*==================== GOOGLE MAPS ====================*/
 
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  const laGolosa = { lat: 51.546, lng: -0.099 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: laGolosa,
-    });
-  // The marker, positioned at laGolosa
-  const marker = new google.maps.Marker({
-    position: laGolosa,
-    map: map,
-    });
-}
-
-
-      /*==================== VIDEO ====================*/
-
-
-      /*==================== SHOW SCROLL UP ====================*/
-
-
-      /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-
-      /*==================== SCROLL REVEAL ANIMATION ====================*/
-
-
-      /*==================== DARK LIGHT THEME ====================*/
+// // Initialize and add the map
+// function initMap() {
+//   // The location of Uluru
+//   const laGolosa = { lat: 51.546, lng: -0.099 };
+//   // The map, centered at Uluru
+//   const map = new google.maps.Map(document.getElementById("map"), {
+//     zoom: 4,
+//     center: laGolosa,
+//     });
+//   // The marker, positioned at laGolosa
+//   const marker = new google.maps.Marker({
+//     position: laGolosa,
+//     map: map,
+//     });
+// }

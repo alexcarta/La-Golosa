@@ -1,6 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -9,7 +9,7 @@
   /*========== Colors ==========*/
   /* Change favorite color to match images */
   /*Green dark 190 - Green 171 - Grren Blue 200*/
-  --hue-color: 50;
+  --hue-color: 44;
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 100%, 50%);
@@ -25,8 +25,8 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
   /*========== Font and typography ==========*/
-  --body-font: 'Open Sans', sans-serif;
-  --title-font: 'Nunito', sans-serif;
+  --body-font: 'Raleway', sans-serif;
+  --title-font: 'Raleway', sans-serif;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -121,6 +121,7 @@ a {
 img, video {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 button, input {
@@ -429,11 +430,70 @@ input {
   transform: var(--img-scale);
 }
 
+/*=============== GALLERY ===============*/
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.gallery__card {
+  position: relative;
+  width: 200px;
+  overflow: var(--img-hidden);
+}
+
+.gallery__data {
+  position: absolute;
+  bottom: 1.5rem;
+  left: .5rem;
+  right: .5rem;
+  padding: 0.5rem;
+}
+
+.gallery__title,
+.gallery__description {
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.gallery__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.gallery__description {
+  display: block;
+  font-size: var(--smaller-font-size);
+}
+
+.gallery__img {
+  transition: var(--img-transition);
+  width: 100%;
+  align-self: center;
+}
+
+.gallery__img:hover {
+  transform: var(--img-scale);
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+.gallery__arrows {
+  color: var(--first-color);
+}
+
+.swiper-pagination {
+  color: var(--first-color);
+}
+
 /*=============== DISCOVER ===============*/
 
 .discover__card {
   position: relative;
-  width: 200px;
+  width: 100%;
   overflow: var(--img-hidden);
 }
 
@@ -611,11 +671,13 @@ input {
 
 /*=============== LOCATION ===============*/
 
-#map {
-  height: 400px;
-  /* The height is 400 pixels */
+.location__map {
   width: 100%;
   /* The width is the width of the web page */
+}
+
+.location__map:hover {
+  box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, .15);
 }
 
 .location__information {
