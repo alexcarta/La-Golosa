@@ -43,71 +43,45 @@ window.addEventListener('scroll', scrollHeader)
 
 /*==================== SWIPER GALLERY ====================*/
 
-var swiperGallery = new Swiper(".gallery__container", {
-  loop:true,
-  spaceBetween: 40,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  mousewheel: true,
-  keyboard: true,
-});
+let swiperGallery = new Swiper(".gallery__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 32,
+    coverflowEffect: {
+        rotate: 0,
+    },
+})
 
 /*==================== SWIPER DISCOVER ====================*/
 
 
-var swiperDiscover = new Swiper(".discover__container", {
-  loop:true,
-  spaceBetween: 40,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  mousewheel: true,
-  keyboard: true,
-});
+let swiperDiscover = new Swiper(".discover__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 32,
+    coverflowEffect: {
+        rotate: 0,
+    },
+})
 
 /*==================== SWIPER TESTIMONIAL ====================*/
 
-var swiperTestimonial = new Swiper(".mySwiper", {
-  cssMode: true,
-  loop:true,
+
+var swiperTestimonial = new Swiper(".testimonial__container", {
+  effect: "flip",
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable:true,
-  },
-  mousewheel: true,
-  keyboard: true,
-});
+    },
+  });
 
-
-/*==================== GOOGLE MAPS ====================*/
-
-// // Initialize and add the map
-// function initMap() {
-//   // The location of Uluru
-//   const laGolosa = { lat: 51.546, lng: -0.099 };
-//   // The map, centered at Uluru
-//   const map = new google.maps.Map(document.getElementById("map"), {
-//     zoom: 4,
-//     center: laGolosa,
-//     });
-//   // The marker, positioned at laGolosa
-//   const marker = new google.maps.Marker({
-//     position: laGolosa,
-//     map: map,
-//     });
-// }
