@@ -966,7 +966,7 @@ input {
 }
 
 /* For tall screens on mobiles and desktop*/
-@media screen and (min-height: 721px) {
+/*@media screen and (min-height: 721px) {
   body {
     margin: 0;
   }
@@ -974,4 +974,4 @@ input {
     height: 640px;
   }
 }
-
+*/
