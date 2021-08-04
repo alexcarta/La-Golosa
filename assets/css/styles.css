@@ -126,7 +126,7 @@ button {
 }
 
 .button:hover {
-  box-shadow: 5px 5px 2px 1px grey;
+  box-shadow: 5px 5px 2px 1px var(--first-color-second);
 }
 
 input {
@@ -327,7 +327,7 @@ input {
 }
 
 .home__social-link {
-  font-size: 1.2rem;
+  font-size: 2rem;
   width: max-content;
 }
 
@@ -367,6 +367,33 @@ input {
 .home__info-img:hover {
   transform: var(--img-scale);
 }
+
+
+.nav__item:hover{
+  transform: scale(1.2);
+}
+
+.nav__language:hover {
+  transform: scale(1.6);
+}
+
+.home__social-link:hover{
+  transform: scale(1.6);
+}
+
+#facebook:hover {
+  color: #0E91F3;
+}
+
+#instagram:hover {
+  color: #C93491;
+}
+
+#deliveroo:hover {
+  color: #00C7B6;
+}
+
+
 /*=============== BUTTONS ===============*/
 
 .button {
@@ -449,6 +476,7 @@ input {
 .gallery__card {
   width: 200px;
   overflow: var(--img-hidden);
+  border-radius: 10px;
 }
 
 .gallery__img {
@@ -469,6 +497,7 @@ input {
   position: relative;
   width: 200px;
   overflow: var(--img-hidden);
+  border-radius: 10px;
 }
 
 .discover__data {
@@ -490,6 +519,7 @@ input {
 .discover__description {
   display: block;
   font-size: var(--smaller-font-size);
+  padding-right: 25px;
 }
 
 .discover__img {
@@ -504,6 +534,7 @@ input {
 .swiper-container-3d .swiper-slide-shadow-right {
   background-image: none;
 }
+
 
 /*=============== TESTIMONIAL ===============*/
 
@@ -817,7 +848,7 @@ input {
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
   }
 
   .nav__item {
@@ -851,6 +882,33 @@ input {
   .section {
     padding: 7rem 0 2rem;
   }
+
+  .nav__list {
+    align-self: center
+  }
+  .nav__larger{
+    display: flex;
+  }
+
+  .nav__upleft {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__languages {
+    margin-left: 40px;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav__language {
+    margin-left: 20px;
+  }
   .home__container {
     height: 100vh;
     grid-template-rows: 1.8fr .5fr;
@@ -862,6 +920,7 @@ input {
     flex-direction: row;
     align-self: flex-end;
     margin-bottom: 3rem;
+    margin-left: 5px;
     column-gap: 2.5rem;
   }
   .home__info {
@@ -915,46 +974,6 @@ input {
 
   .nav__item{
     margin-left: 40px;
-  }
-
-  .nav__item:hover{
-    transform: scale(1.2);
-  }
-
-  .nav__language:hover {
-    transform: scale(1.6);
-  }
-
-  .home__social-link:hover{
-    transform: scale(1.6);
-
-  }
-
-  .nav__list {
-    align-self: center
-  }
-  .nav__larger{
-    display: flex;
-  }
-
-.nav__upleft {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
- }
-
-  .nav__languages {
-    margin-left: 40px;
-    margin-right: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav__language {
-    margin-left: 20px;
   }
 
   .home__container {

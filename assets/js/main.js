@@ -70,6 +70,9 @@ let swiperDiscover = new Swiper(".discover__container", {
     },
 })
 
+/*==================== MODAL DISCOVER ====================*/
+
+
 /*==================== SWIPER TESTIMONIAL ====================*/
 
 
