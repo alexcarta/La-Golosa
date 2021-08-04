@@ -451,6 +451,7 @@ input {
 
 .about__img-overlay {
   overflow: var(--img-hidden);
+  border-radius: 10px;
 }
 
 .about__img-one{
@@ -473,8 +474,12 @@ input {
 
 /*=============== GALLERY ===============*/
 
+.gallery__container {
+  max-width: 850px;
+}
+
 .gallery__card {
-  width: 200px;
+  width: 250px;
   overflow: var(--img-hidden);
   border-radius: 10px;
 }
@@ -492,6 +497,10 @@ input {
   background-image: none;
 }
 /*=============== DISCOVER ===============*/
+
+.gallery__container {
+  max-width: 850px;
+}
 
 .discover__card {
   position: relative;
@@ -810,20 +819,6 @@ input {
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px) {
-  .video__container {
-    display: grid;
-    grid-template-columns: .6fr;
-    justify-content: center;
-  }
-  .place__container {
-    grid-template-columns: repeat(3, max-content);
-  }
-  .subscribe__form {
-    width: 470px;
-    margin: 0 auto;
-  }
-}
 
 @media screen and (min-width: 768px) {
   body {
@@ -940,7 +935,7 @@ input {
     margin-bottom: var(--mb-2);
   }
   .discover__container {
-    width: 610px;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1005,11 +1000,11 @@ input {
     width: 290px;
   }
   .discover__card {
-    width: 237px;
-  }
+    width: 280px;
+  }/*
   .discover__container {
     width: 700px;
-  }
+  }*/
   .discover__data {
     left: 1.5rem;
     bottom: 2rem;
